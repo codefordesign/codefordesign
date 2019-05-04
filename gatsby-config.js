@@ -1,4 +1,11 @@
 module.exports = {
+  siteMetadata: {
+    title: 'Code for Design',
+    description: 'Code for Design workshop'
+  },
   pathPrefix: '/codefordesign',
-  plugins: [`gatsby-plugin-stylus`]
+  plugins: [
+    'gatsby-plugin-stylus',
+    'gatsby-plugin-react-helmet'
+  ]
 }
