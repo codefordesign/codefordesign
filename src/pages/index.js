@@ -1,10 +1,12 @@
 import React from 'react'
+import '../assets/styles/index.styl'
+import logo from '../assets/images/logo.svg'
 
 const index = () => {
   return (
-    <div>
-      <h1>Code for design</h1>
-    </div>
+    <main className='main'>
+      <img src={logo} alt='Code for Design logo' />
+    </main>
   )
 }
 
