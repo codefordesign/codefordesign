@@ -1,4 +1,5 @@
 import React from 'react'
+import '../assets/styles/normalize.css'
 import '../assets/styles/index.styl'
 import logo from '../assets/images/logo.svg'
 
