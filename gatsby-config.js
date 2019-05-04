@@ -1,3 +1,4 @@
 module.exports = {
-  pathPrefix: '/codefordesign'
+  pathPrefix: '/codefordesign',
+  plugins: [`gatsby-plugin-stylus`]
 }
