@@ -1,27 +1,24 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
-import { useStaticQuery, graphql } from 'gatsby'
+import { graphql } from "gatsby"
 
 import '../assets/styles/normalize.css'
 import '../assets/styles/index.styl'
 import logo from '../assets/images/logo.svg'
 
-const index = () => {
-  const {
-    site: {
-      siteMetadata: { title, description }
-    }
-  } = useStaticQuery(graphql`
-    query {
-      site {
-        siteMetadata {
-          title
-          description
-        }
+export const query = graphql`
+  query {
+    site {
+      siteMetadata {
+        title,
+        description
       }
     }
-  `)
+  }
+`
 
+const index = ({ data }) => {
+  const { title, description } = data.site.siteMetadata
   return (
     <main className='main'>
       <Helmet>
